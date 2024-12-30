@@ -25,5 +25,25 @@
             "program": "ff/main.go",
             "args": ["start", "dev"]
         },
+        {
+            "name": "Debug init fabric mode",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "program": "ff/main.go",
+            "args": [
+                "init", 
+                "fabric", 
+                "dev", 
+                "--ccp", 
+                "/Users/alkimiste/ocp/org1_ccp.yml", 
+                "--msp", 
+                "organizations", 
+                "--channel", 
+                "mychannel", 
+                "--chaincode", 
+                "firefly"
+            ]
+        }
     ]
 }
